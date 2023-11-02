@@ -21,7 +21,7 @@ public class ProbarAlgoritmos {
         SelectionSort selection = new SelectionSort();
         long startTime = System.nanoTime();
 
-        selection.selectionSort(array100000);
+        bubble.bubbleSort(array1000000);
 
         long endTime = System.nanoTime();
         long elapsedTime = endTime - startTime;
