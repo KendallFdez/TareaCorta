@@ -19,9 +19,12 @@ public class ProbarAlgoritmos {
         int[] array1000000 = getRandomArray(1000000);
         BubbleSort bubble = new BubbleSort();
         SelectionSort selection = new SelectionSort();
+        RadixSort radixSort = new RadixSort();
         long startTime = System.nanoTime();
 
-        bubble.bubbleSort(array1000000);
+        System.out.println("Para 100000 elementos\nDato 1");
+        int n = array100000.length;
+        RadixSort.radixsort(array100000, n-1 );
 
         long endTime = System.nanoTime();
         long elapsedTime = endTime - startTime;
